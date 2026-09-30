@@ -20,7 +20,7 @@ def process_records(records: list[dict]) -> list[dict]:
     processed = []
     for record in records:
         try:
-            record["amount"] = int(record["amount"]) * 1.1  # 例: 消費税計算
+            record["amount"] = round(int(record["amount"]) * 1.1, 2)  # 例: 消費税計算
             processed.append(record)
         except (KeyError, ValueError) as e:
             logger.warning(f"スキップ: {record} ({e})")
