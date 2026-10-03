@@ -1,0 +1,7 @@
+date,name,category,amount
+2026-10-01,apple,fruit,100
+2026-10-01,banana,fruit,200
+2026-10-01,desk,furniture,500
+2026-10-02,chair,furniture,-30
+2026-10-02,,furniture,150
+2026-10-02,pen,stationery,50
